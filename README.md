@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RetailIQ — AI-Powered Retail Intelligence Platform
 
-## Getting Started
+Transform fashion product data into strategic business decisions. RetailIQ takes
+a research pipeline — originally an MSc dissertation on consumer behaviour in
+fashion retail — and expands it into a modern, decision-support web application:
+executive dashboards, product and customer analytics, market basket analysis,
+machine-learning evaluation and interactive, in-browser AI predictions.
 
-First, run the development server:
+> Built on a **simulated** fashion retail dataset. All figures are for
+> methodological demonstration, not real market data.
+
+## Tech stack
+
+- **Next.js 16** (App Router) + **React 19** + **TypeScript**
+- **Tailwind CSS v4** design system (CSS-first tokens)
+- **shadcn-style** UI primitives, **lucide-react** icons
+- **Motion** (Framer Motion) for tasteful animation
+- **Recharts** for data visualisation
+- Offline **Python** analytics pipeline exporting JSON artifacts (from Milestone 2)
+- Deployed on **Vercel**
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm run build      # production build
+npm run start      # serve the production build
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/                     # App Router pages (one folder per route)
+    layout.tsx             # Root layout: fonts, metadata, navbar + footer
+    page.tsx               # Home / landing
+    dashboard/ …           # Interior routes (10 modules)
+  components/
+    site/                  # Navbar, footer, logo, page headers, reveal
+    ui/                    # Button, Card, Badge (design-system primitives)
+  lib/
+    nav.ts                 # Navigation model (grouped destinations)
+    pages.ts               # Interior page content model
+    utils.ts               # cn() + formatting helpers
+  app/globals.css          # Design tokens + base styles (Tailwind v4 @theme)
+```
 
-## Learn More
+## Design system
 
-To learn more about Next.js, take a look at the following resources:
+Aesthetic inspired by Apple, Stripe, Linear and Vercel — minimal, elegant,
+premium. Palette: warm white, soft powder blue, mist blue, steel blue, deep
+slate. Light theme only. Generous spacing, rounded cards, minimal shadows.
+Tokens live in `src/app/globals.css` under `@theme`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application is built incrementally, one milestone at a time:
 
-## Deploy on Vercel
+| # | Milestone | Status |
+|---|-----------|--------|
+| M1 | Project scaffold + design system + app shell | ✅ Complete |
+| M2 | Data & ML pipeline (Python, offline) → JSON artifacts | ⏳ Next |
+| M3 | Home, Research, Methodology, About content | Planned |
+| M4 | Executive Dashboard + Product Analytics | Planned |
+| M5 | Customer Intelligence + Market Basket Analysis | Planned |
+| M6 | Machine Learning + AI Predictions | Planned |
+| M7 | Reports + PDF export + polish + ship | Planned |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment (Vercel)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project is a standard Next.js app and deploys to Vercel with zero config:
+
+1. Push this folder to a Git repository.
+2. Import the repo at [vercel.com/new](https://vercel.com/new).
+3. Framework preset **Next.js** is auto-detected; no environment variables are
+   required (all analytics run client-side from static JSON artifacts).
+
+A full deployment guide is added in Milestone 7.

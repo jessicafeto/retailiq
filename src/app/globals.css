@@ -1,26 +1,167 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------ *
+ * RetailIQ design system
+ * Aesthetic: Apple / Stripe / Linear / Vercel — minimal, elegant, premium.
+ * Palette: warm white, soft powder blue, mist blue, steel blue, deep slate.
+ * No dark mode by default. Large spacing, rounded cards, minimal shadows.
+ * ------------------------------------------------------------------ */
+
+@theme {
+  /* Neutral slate scale — deep slate → paper */
+  --color-ink-950: #0b1220;
+  --color-ink-900: #0f1b2d;
+  --color-ink-800: #1e293b;
+  --color-ink-700: #334155;
+  --color-ink-600: #475569;
+  --color-ink-500: #64748b;
+  --color-ink-400: #94a3b8;
+  --color-ink-300: #cbd5e1;
+  --color-ink-200: #e2e8f0;
+  --color-ink-100: #eef2f7;
+  --color-ink-50: #f6f8fb;
+
+  /* Brand blue scale — steel → mist → powder */
+  --color-steel-700: #2e5486;
+  --color-steel-600: #35608f;
+  --color-steel-500: #4478b0;
+  --color-steel-400: #6c97c9;
+  --color-steel-300: #9dbbdd;
+  --color-steel-200: #c7dbf0;
+  --color-steel-100: #e4eef9;
+  --color-steel-50: #f1f6fc;
+
+  /* Supporting hues (charts / accents, used sparingly) */
+  --color-teal-500: #3f9e9a;
+  --color-teal-200: #c3e6e3;
+  --color-sand-500: #c99a5b;
+  --color-sand-200: #f0e2cb;
+  --color-rose-500: #c96f83;
+  --color-rose-200: #f2d7dd;
+
+  /* Semantic surfaces */
+  --color-paper: #f7f9fc; /* warm-soft white page background */
+  --color-surface: #ffffff; /* cards */
+  --color-brand: var(--color-steel-600);
+  --color-brand-strong: var(--color-steel-700);
+
+  /* Radii — rounded, generous */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  /* Minimal, soft shadows */
+  --shadow-soft: 0 1px 2px rgba(15, 27, 45, 0.04), 0 4px 16px rgba(15, 27, 45, 0.04);
+  --shadow-card: 0 1px 3px rgba(15, 27, 45, 0.05), 0 10px 32px rgba(15, 27, 45, 0.05);
+  --shadow-lift: 0 18px 48px rgba(15, 27, 45, 0.12);
+  --shadow-ring: 0 0 0 1px rgba(15, 27, 45, 0.06);
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", monospace;
+  --font-display: var(--font-instrument), Georgia, "Times New Roman", serif;
+
+  /* Content width */
+  --container-page: 78rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+  }
+
+  * {
+    border-color: var(--color-ink-200);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink-700);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv01", "cv03", "ss01";
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--color-ink-900);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--color-steel-200);
+    color: var(--color-ink-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-steel-500);
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Elegant page container */
+  .container-page {
+    width: 100%;
+    max-width: var(--container-page);
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .container-page { padding-inline: 2rem; }
+  }
+
+  /* Eyebrow / section label */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-steel-600);
+  }
+
+  /* Display type using serif */
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+
+  /* Soft hero backdrop */
+  .hero-aurora {
+    background:
+      radial-gradient(60% 55% at 15% 10%, rgba(108, 151, 201, 0.20), transparent 60%),
+      radial-gradient(50% 50% at 85% 0%, rgba(199, 219, 240, 0.35), transparent 55%),
+      radial-gradient(70% 60% at 50% 100%, rgba(228, 238, 249, 0.6), transparent 60%);
+  }
+
+  /* Subtle dotted grid */
+  .bg-grid {
+    background-image: radial-gradient(rgba(15, 27, 45, 0.05) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

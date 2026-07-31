@@ -29,6 +29,7 @@ export function Navbar() {
 
   return (
     <header
+      data-chrome
       className={cn(
         "sticky top-0 z-50 transition-colors duration-300",
         scrolled

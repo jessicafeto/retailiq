@@ -4,7 +4,7 @@ import { Logo } from "@/components/site/logo";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-ink-200/70 bg-surface/60">
+    <footer data-chrome className="mt-24 border-t border-ink-200/70 bg-surface/60">
       <div className="container-page py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div className="max-w-sm">

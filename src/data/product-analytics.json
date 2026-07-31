@@ -1,0 +1,244 @@
+{
+  "byBrand": [
+    {
+      "label": "Alexander McQueen",
+      "count": 125127,
+      "avgPrice": 55.1111,
+      "avgRating": 2.9978,
+      "avgReviews": 249.6385
+    },
+    {
+      "label": "Burberry",
+      "count": 124813,
+      "avgPrice": 55.1838,
+      "avgRating": 2.9962,
+      "avgReviews": 249.7061
+    },
+    {
+      "label": "Calvin Klein",
+      "count": 124710,
+      "avgPrice": 55.0163,
+      "avgRating": 3.001,
+      "avgReviews": 249.7987
+    },
+    {
+      "label": "Jigsaw",
+      "count": 125307,
+      "avgPrice": 54.94,
+      "avgRating": 2.9958,
+      "avgReviews": 249.0575
+    },
+    {
+      "label": "Mulberry",
+      "count": 124662,
+      "avgPrice": 54.8836,
+      "avgRating": 2.9962,
+      "avgReviews": 249.7886
+    },
+    {
+      "label": "Ralph Lauren",
+      "count": 125575,
+      "avgPrice": 55.0892,
+      "avgRating": 3.0018,
+      "avgReviews": 249.8453
+    },
+    {
+      "label": "Ted Baker",
+      "count": 124531,
+      "avgPrice": 54.8761,
+      "avgRating": 3.0041,
+      "avgReviews": 249.3593
+    },
+    {
+      "label": "Tommy Hilfiger",
+      "count": 125275,
+      "avgPrice": 54.9106,
+      "avgRating": 2.9947,
+      "avgReviews": 249.6258
+    }
+  ],
+  "byCategory": [
+    {
+      "label": "Accessories",
+      "count": 100291,
+      "avgPrice": 54.9728,
+      "avgRating": 3.0018,
+      "avgReviews": 250.3937
+    },
+    {
+      "label": "Activewear",
+      "count": 99751,
+      "avgPrice": 55.0192,
+      "avgRating": 3.0048,
+      "avgReviews": 249.7111
+    },
+    {
+      "label": "Bottoms",
+      "count": 99666,
+      "avgPrice": 55.0591,
+      "avgRating": 3.0031,
+      "avgReviews": 249.2115
+    },
+    {
+      "label": "Dresses",
+      "count": 99950,
+      "avgPrice": 54.9027,
+      "avgRating": 2.9994,
+      "avgReviews": 249.4825
+    },
+    {
+      "label": "Footwear",
+      "count": 99793,
+      "avgPrice": 55.0911,
+      "avgRating": 3.0006,
+      "avgReviews": 249.8703
+    },
+    {
+      "label": "Jewelry",
+      "count": 100155,
+      "avgPrice": 54.908,
+      "avgRating": 2.9975,
+      "avgReviews": 249.4897
+    },
+    {
+      "label": "Lingerie",
+      "count": 99949,
+      "avgPrice": 55.0532,
+      "avgRating": 2.9937,
+      "avgReviews": 249.6482
+    },
+    {
+      "label": "Outerwear",
+      "count": 100076,
+      "avgPrice": 54.9568,
+      "avgRating": 2.9912,
+      "avgReviews": 249.1835
+    },
+    {
+      "label": "Swimwear",
+      "count": 100328,
+      "avgPrice": 55.0703,
+      "avgRating": 2.9928,
+      "avgReviews": 249.3049
+    },
+    {
+      "label": "Tops",
+      "count": 100041,
+      "avgPrice": 54.9815,
+      "avgRating": 2.9996,
+      "avgReviews": 249.7276
+    }
+  ],
+  "byStyle": [
+    {
+      "label": "Bohemian",
+      "count": 100212,
+      "avgPrice": 54.8597,
+      "avgRating": 3.0009,
+      "avgReviews": 249.9771
+    },
+    {
+      "label": "Casual",
+      "count": 99930,
+      "avgPrice": 55.0325,
+      "avgRating": 3.0026,
+      "avgReviews": 249.439
+    },
+    {
+      "label": "Edgy",
+      "count": 99959,
+      "avgPrice": 55.0443,
+      "avgRating": 2.9996,
+      "avgReviews": 249.4378
+    },
+    {
+      "label": "Formal",
+      "count": 99988,
+      "avgPrice": 54.9559,
+      "avgRating": 3.0018,
+      "avgReviews": 249.3918
+    },
+    {
+      "label": "Glamorous",
+      "count": 99788,
+      "avgPrice": 55.0355,
+      "avgRating": 2.9972,
+      "avgReviews": 249.8979
+    },
+    {
+      "label": "Minimalist",
+      "count": 100052,
+      "avgPrice": 55.0488,
+      "avgRating": 2.9967,
+      "avgReviews": 249.4222
+    },
+    {
+      "label": "Preppy",
+      "count": 99952,
+      "avgPrice": 55.1204,
+      "avgRating": 2.9956,
+      "avgReviews": 250.2401
+    },
+    {
+      "label": "Sporty",
+      "count": 99876,
+      "avgPrice": 55.0985,
+      "avgRating": 2.9967,
+      "avgReviews": 249.6884
+    },
+    {
+      "label": "Streetwear",
+      "count": 100042,
+      "avgPrice": 54.945,
+      "avgRating": 2.9957,
+      "avgReviews": 249.4961
+    },
+    {
+      "label": "Vintage",
+      "count": 100201,
+      "avgPrice": 54.8744,
+      "avgRating": 2.9977,
+      "avgReviews": 249.0352
+    }
+  ],
+  "priceRatingCrosstab": {
+    "bands": [
+      "\u00a30\u201325",
+      "\u00a325\u201350",
+      "\u00a350\u201375",
+      "\u00a375\u2013100"
+    ],
+    "ratings": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "matrix": [
+      [
+        0.2491,
+        0.2518,
+        0.2496,
+        0.2495
+      ],
+      [
+        0.2507,
+        0.2504,
+        0.2496,
+        0.2494
+      ],
+      [
+        0.2509,
+        0.2504,
+        0.2494,
+        0.2493
+      ],
+      [
+        0.2501,
+        0.2504,
+        0.2493,
+        0.2502
+      ]
+    ]
+  }
+}

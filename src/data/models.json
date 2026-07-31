@@ -1,0 +1,1184 @@
+{
+  "sample": {
+    "size": 20000,
+    "split": "stratified",
+    "randomState": 42,
+    "reduction": {
+      "pca": 10,
+      "lda": 1
+    }
+  },
+  "modelOrder": [
+    "Logistic Regression",
+    "KNN",
+    "Linear SVM",
+    "Kernel SVM",
+    "Naive Bayes",
+    "Decision Tree",
+    "Random Forest"
+  ],
+  "targets": [
+    {
+      "key": "Is_Satisfied",
+      "label": "Customer Satisfaction",
+      "description": "Whether a customer is satisfied (rating above 3).",
+      "note": "Original track leaks: Rating (and its duplicate Satisfaction) remain in the features, so >90% accuracy is largely trivial. The corrected track drops all rating-derived columns.",
+      "positiveRate": 0.4983,
+      "baselineAccuracy": 50.17,
+      "dissertationPca": {
+        "Logistic Regression": 94.9,
+        "KNN": 92.99,
+        "Linear SVM": 94.91,
+        "Kernel SVM": 95.31,
+        "Naive Bayes": 92.17,
+        "Decision Tree": 92.44,
+        "Random Forest": 95.07
+      },
+      "reproductionPca": {
+        "Logistic Regression": 98.87,
+        "KNN": 94.82,
+        "Linear SVM": 98.87,
+        "Kernel SVM": 98.58,
+        "Naive Bayes": 98.87,
+        "Decision Tree": 98.03,
+        "Random Forest": 98.93
+      },
+      "reproductionLda": {
+        "Logistic Regression": 98.8,
+        "KNN": 98.58,
+        "Linear SVM": 98.82,
+        "Kernel SVM": 98.82,
+        "Naive Bayes": 98.77,
+        "Decision Tree": 98.32,
+        "Random Forest": 98.13
+      },
+      "corrected": {
+        "Logistic Regression": {
+          "accuracy": 49.24,
+          "precision": 49.05,
+          "recall": 47.63,
+          "f1": 48.33,
+          "rocAuc": 0.4929,
+          "cvMean": 49.74,
+          "cvStd": 0.66
+        },
+        "KNN": {
+          "accuracy": 49.4,
+          "precision": 49.25,
+          "recall": 50.36,
+          "f1": 49.8,
+          "rocAuc": 0.4983,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Linear SVM": {
+          "accuracy": 49.12,
+          "precision": 48.93,
+          "recall": 47.51,
+          "f1": 48.21,
+          "rocAuc": 0.4927,
+          "cvMean": 49.8,
+          "cvStd": 0.73
+        },
+        "Kernel SVM": {
+          "accuracy": 50.24,
+          "precision": 50.08,
+          "recall": 50.24,
+          "f1": 50.16,
+          "rocAuc": 0.5037,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Naive Bayes": {
+          "accuracy": 49.18,
+          "precision": 49.02,
+          "recall": 49.4,
+          "f1": 49.21,
+          "rocAuc": 0.4909,
+          "cvMean": 49.65,
+          "cvStd": 0.55
+        },
+        "Decision Tree": {
+          "accuracy": 48.66,
+          "precision": 48.5,
+          "recall": 48.76,
+          "f1": 48.63,
+          "rocAuc": 0.4846,
+          "cvMean": 49.33,
+          "cvStd": 0.73
+        },
+        "Random Forest": {
+          "accuracy": 49.52,
+          "precision": 49.37,
+          "recall": 50.12,
+          "f1": 49.74,
+          "rocAuc": 0.5016,
+          "cvMean": 50.45,
+          "cvStd": 0.77
+        }
+      },
+      "headline": "Random Forest",
+      "confusionMatrix": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            1227,
+            1281
+          ],
+          [
+            1243,
+            1249
+          ]
+        ]
+      },
+      "roc": {
+        "model": "Random Forest",
+        "points": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0004
+          },
+          {
+            "fpr": 0.0008,
+            "tpr": 0.0004
+          },
+          {
+            "fpr": 0.0016,
+            "tpr": 0.0008
+          },
+          {
+            "fpr": 0.0036,
+            "tpr": 0.0016
+          },
+          {
+            "fpr": 0.0036,
+            "tpr": 0.0036
+          },
+          {
+            "fpr": 0.0048,
+            "tpr": 0.0076
+          },
+          {
+            "fpr": 0.0092,
+            "tpr": 0.0144
+          },
+          {
+            "fpr": 0.014,
+            "tpr": 0.0237
+          },
+          {
+            "fpr": 0.0247,
+            "tpr": 0.0317
+          },
+          {
+            "fpr": 0.0439,
+            "tpr": 0.0518
+          },
+          {
+            "fpr": 0.0562,
+            "tpr": 0.0682
+          },
+          {
+            "fpr": 0.0746,
+            "tpr": 0.0923
+          },
+          {
+            "fpr": 0.1308,
+            "tpr": 0.1384
+          },
+          {
+            "fpr": 0.1663,
+            "tpr": 0.1722
+          },
+          {
+            "fpr": 0.199,
+            "tpr": 0.2103
+          },
+          {
+            "fpr": 0.2468,
+            "tpr": 0.2492
+          },
+          {
+            "fpr": 0.3441,
+            "tpr": 0.3443
+          },
+          {
+            "fpr": 0.3943,
+            "tpr": 0.3941
+          },
+          {
+            "fpr": 0.447,
+            "tpr": 0.4498
+          },
+          {
+            "fpr": 0.559,
+            "tpr": 0.5534
+          },
+          {
+            "fpr": 0.6112,
+            "tpr": 0.6039
+          },
+          {
+            "fpr": 0.6571,
+            "tpr": 0.6593
+          },
+          {
+            "fpr": 0.7564,
+            "tpr": 0.7492
+          },
+          {
+            "fpr": 0.7939,
+            "tpr": 0.7937
+          },
+          {
+            "fpr": 0.8285,
+            "tpr": 0.8299
+          },
+          {
+            "fpr": 0.8832,
+            "tpr": 0.8941
+          },
+          {
+            "fpr": 0.9115,
+            "tpr": 0.9149
+          },
+          {
+            "fpr": 0.9318,
+            "tpr": 0.9342
+          },
+          {
+            "fpr": 0.9494,
+            "tpr": 0.947
+          },
+          {
+            "fpr": 0.9717,
+            "tpr": 0.9719
+          },
+          {
+            "fpr": 0.9797,
+            "tpr": 0.9791
+          },
+          {
+            "fpr": 0.9856,
+            "tpr": 0.9852
+          },
+          {
+            "fpr": 0.9932,
+            "tpr": 0.992
+          },
+          {
+            "fpr": 0.9952,
+            "tpr": 0.996
+          },
+          {
+            "fpr": 0.9972,
+            "tpr": 0.9968
+          },
+          {
+            "fpr": 0.9988,
+            "tpr": 0.9988
+          },
+          {
+            "fpr": 0.9992,
+            "tpr": 0.9992
+          },
+          {
+            "fpr": 0.9996,
+            "tpr": 0.9992
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "auc": 0.5016
+      }
+    },
+    {
+      "key": "Interested",
+      "label": "Customer Interest",
+      "description": "Whether a customer shows high purchase interest.",
+      "note": "Interest is defined directly from purchase history, which the original track leaves in the features. Corrected track removes it.",
+      "positiveRate": 0.4995,
+      "baselineAccuracy": 50.04,
+      "dissertationPca": {
+        "Logistic Regression": 53.11,
+        "KNN": 50.42,
+        "Linear SVM": 53.11,
+        "Kernel SVM": 53.06,
+        "Naive Bayes": 53.19,
+        "Decision Tree": 51.09,
+        "Random Forest": 51.27
+      },
+      "reproductionPca": {
+        "Logistic Regression": 54.4,
+        "KNN": 50.32,
+        "Linear SVM": 54.37,
+        "Kernel SVM": 54.5,
+        "Naive Bayes": 53.52,
+        "Decision Tree": 53.25,
+        "Random Forest": 54.3
+      },
+      "reproductionLda": {
+        "Logistic Regression": 54.37,
+        "KNN": 51.57,
+        "Linear SVM": 54.37,
+        "Kernel SVM": 54.38,
+        "Naive Bayes": 54.55,
+        "Decision Tree": 53.43,
+        "Random Forest": 51.55
+      },
+      "corrected": {
+        "Logistic Regression": {
+          "accuracy": 50.14,
+          "precision": 50.1,
+          "recall": 50.32,
+          "f1": 50.21,
+          "rocAuc": 0.5003,
+          "cvMean": 49.82,
+          "cvStd": 0.7
+        },
+        "KNN": {
+          "accuracy": 50.6,
+          "precision": 50.58,
+          "recall": 48.76,
+          "f1": 49.65,
+          "rocAuc": 0.5055,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Linear SVM": {
+          "accuracy": 50.0,
+          "precision": 49.96,
+          "recall": 50.2,
+          "f1": 50.08,
+          "rocAuc": 0.5003,
+          "cvMean": 49.78,
+          "cvStd": 0.7
+        },
+        "Kernel SVM": {
+          "accuracy": 49.34,
+          "precision": 49.26,
+          "recall": 46.44,
+          "f1": 47.81,
+          "rocAuc": 0.5024,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Naive Bayes": {
+          "accuracy": 49.74,
+          "precision": 49.7,
+          "recall": 49.88,
+          "f1": 49.79,
+          "rocAuc": 0.4987,
+          "cvMean": 49.56,
+          "cvStd": 0.22
+        },
+        "Decision Tree": {
+          "accuracy": 49.12,
+          "precision": 49.01,
+          "recall": 45.6,
+          "f1": 47.24,
+          "rocAuc": 0.4923,
+          "cvMean": 50.34,
+          "cvStd": 0.74
+        },
+        "Random Forest": {
+          "accuracy": 50.38,
+          "precision": 50.37,
+          "recall": 45.92,
+          "f1": 48.04,
+          "rocAuc": 0.5037,
+          "cvMean": 49.84,
+          "cvStd": 0.84
+        }
+      },
+      "headline": "Random Forest",
+      "confusionMatrix": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            1372,
+            1130
+          ],
+          [
+            1351,
+            1147
+          ]
+        ]
+      },
+      "roc": {
+        "model": "Random Forest",
+        "points": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0004,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0004,
+            "tpr": 0.0004
+          },
+          {
+            "fpr": 0.0012,
+            "tpr": 0.0012
+          },
+          {
+            "fpr": 0.0016,
+            "tpr": 0.0016
+          },
+          {
+            "fpr": 0.0024,
+            "tpr": 0.0028
+          },
+          {
+            "fpr": 0.0064,
+            "tpr": 0.006
+          },
+          {
+            "fpr": 0.01,
+            "tpr": 0.0084
+          },
+          {
+            "fpr": 0.0164,
+            "tpr": 0.0116
+          },
+          {
+            "fpr": 0.0288,
+            "tpr": 0.0232
+          },
+          {
+            "fpr": 0.0364,
+            "tpr": 0.0332
+          },
+          {
+            "fpr": 0.0468,
+            "tpr": 0.0448
+          },
+          {
+            "fpr": 0.0799,
+            "tpr": 0.0809
+          },
+          {
+            "fpr": 0.1019,
+            "tpr": 0.1041
+          },
+          {
+            "fpr": 0.1511,
+            "tpr": 0.1601
+          },
+          {
+            "fpr": 0.1894,
+            "tpr": 0.195
+          },
+          {
+            "fpr": 0.2254,
+            "tpr": 0.2306
+          },
+          {
+            "fpr": 0.3185,
+            "tpr": 0.3199
+          },
+          {
+            "fpr": 0.3589,
+            "tpr": 0.3659
+          },
+          {
+            "fpr": 0.4057,
+            "tpr": 0.4139
+          },
+          {
+            "fpr": 0.4996,
+            "tpr": 0.5064
+          },
+          {
+            "fpr": 0.5592,
+            "tpr": 0.5624
+          },
+          {
+            "fpr": 0.6131,
+            "tpr": 0.6181
+          },
+          {
+            "fpr": 0.713,
+            "tpr": 0.7146
+          },
+          {
+            "fpr": 0.7642,
+            "tpr": 0.7602
+          },
+          {
+            "fpr": 0.803,
+            "tpr": 0.7962
+          },
+          {
+            "fpr": 0.8637,
+            "tpr": 0.8683
+          },
+          {
+            "fpr": 0.8829,
+            "tpr": 0.8915
+          },
+          {
+            "fpr": 0.9309,
+            "tpr": 0.9376
+          },
+          {
+            "fpr": 0.9476,
+            "tpr": 0.9496
+          },
+          {
+            "fpr": 0.9628,
+            "tpr": 0.9604
+          },
+          {
+            "fpr": 0.9812,
+            "tpr": 0.9776
+          },
+          {
+            "fpr": 0.9864,
+            "tpr": 0.9828
+          },
+          {
+            "fpr": 0.9904,
+            "tpr": 0.9888
+          },
+          {
+            "fpr": 0.9932,
+            "tpr": 0.994
+          },
+          {
+            "fpr": 0.994,
+            "tpr": 0.9964
+          },
+          {
+            "fpr": 0.9956,
+            "tpr": 0.9976
+          },
+          {
+            "fpr": 0.9988,
+            "tpr": 0.9984
+          },
+          {
+            "fpr": 0.9992,
+            "tpr": 0.9988
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "auc": 0.5037
+      }
+    },
+    {
+      "key": "Has_Purchased_Category",
+      "label": "Category Recommendation",
+      "description": "Likelihood a customer has purchased from a category.",
+      "note": "This target is near-degenerate (almost every row is positive), so ~90% accuracy simply matches the majority-class baseline.",
+      "positiveRate": 0.9006,
+      "baselineAccuracy": 90.06,
+      "dissertationPca": {
+        "Logistic Regression": 89.85,
+        "KNN": 88.93,
+        "Linear SVM": 89.85,
+        "Kernel SVM": 89.85,
+        "Naive Bayes": 89.85,
+        "Decision Tree": 81.33,
+        "Random Forest": 89.84
+      },
+      "reproductionPca": {
+        "Logistic Regression": 90.07,
+        "KNN": 88.83,
+        "Linear SVM": 90.07,
+        "Kernel SVM": 90.07,
+        "Naive Bayes": 90.07,
+        "Decision Tree": 88.63,
+        "Random Forest": 90.07
+      },
+      "reproductionLda": {
+        "Logistic Regression": 90.07,
+        "KNN": 89.12,
+        "Linear SVM": 90.07,
+        "Kernel SVM": 90.07,
+        "Naive Bayes": 90.07,
+        "Decision Tree": 89.45,
+        "Random Forest": 82.58
+      },
+      "corrected": {
+        "Logistic Regression": {
+          "accuracy": 52.5,
+          "precision": 90.18,
+          "recall": 53.03,
+          "f1": 66.79,
+          "rocAuc": 0.5024,
+          "cvMean": 51.37,
+          "cvStd": 0.24
+        },
+        "KNN": {
+          "accuracy": 89.44,
+          "precision": 90.03,
+          "recall": 99.27,
+          "f1": 94.42,
+          "rocAuc": 0.4923,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Linear SVM": {
+          "accuracy": 52.5,
+          "precision": 90.21,
+          "recall": 53.01,
+          "f1": 66.78,
+          "rocAuc": 0.5024,
+          "cvMean": 51.36,
+          "cvStd": 0.24
+        },
+        "Kernel SVM": {
+          "accuracy": 70.24,
+          "precision": 90.17,
+          "recall": 75.15,
+          "f1": 81.98,
+          "rocAuc": 0.5011,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Naive Bayes": {
+          "accuracy": 90.04,
+          "precision": 90.06,
+          "recall": 99.98,
+          "f1": 94.76,
+          "rocAuc": 0.5021,
+          "cvMean": 90.05,
+          "cvStd": 0.03
+        },
+        "Decision Tree": {
+          "accuracy": 36.54,
+          "precision": 90.55,
+          "recall": 32.98,
+          "f1": 48.35,
+          "rocAuc": 0.5156,
+          "cvMean": 46.05,
+          "cvStd": 10.27
+        },
+        "Random Forest": {
+          "accuracy": 90.06,
+          "precision": 90.06,
+          "recall": 100.0,
+          "f1": 94.77,
+          "rocAuc": 0.5037,
+          "cvMean": 90.07,
+          "cvStd": 0.01
+        }
+      },
+      "headline": "Random Forest",
+      "confusionMatrix": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            0,
+            497
+          ],
+          [
+            0,
+            4503
+          ]
+        ]
+      },
+      "roc": {
+        "model": "Random Forest",
+        "points": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0002
+          },
+          {
+            "fpr": 0.002,
+            "tpr": 0.0004
+          },
+          {
+            "fpr": 0.002,
+            "tpr": 0.0027
+          },
+          {
+            "fpr": 0.0121,
+            "tpr": 0.0089
+          },
+          {
+            "fpr": 0.0362,
+            "tpr": 0.0209
+          },
+          {
+            "fpr": 0.0584,
+            "tpr": 0.0444
+          },
+          {
+            "fpr": 0.0926,
+            "tpr": 0.0819
+          },
+          {
+            "fpr": 0.1449,
+            "tpr": 0.1337
+          },
+          {
+            "fpr": 0.2012,
+            "tpr": 0.2019
+          },
+          {
+            "fpr": 0.2736,
+            "tpr": 0.2854
+          },
+          {
+            "fpr": 0.3682,
+            "tpr": 0.37
+          },
+          {
+            "fpr": 0.4588,
+            "tpr": 0.4586
+          },
+          {
+            "fpr": 0.5453,
+            "tpr": 0.5501
+          },
+          {
+            "fpr": 0.6318,
+            "tpr": 0.6287
+          },
+          {
+            "fpr": 0.6962,
+            "tpr": 0.7026
+          },
+          {
+            "fpr": 0.7505,
+            "tpr": 0.7655
+          },
+          {
+            "fpr": 0.8028,
+            "tpr": 0.8221
+          },
+          {
+            "fpr": 0.8491,
+            "tpr": 0.8683
+          },
+          {
+            "fpr": 0.8873,
+            "tpr": 0.9007
+          },
+          {
+            "fpr": 0.9175,
+            "tpr": 0.928
+          },
+          {
+            "fpr": 0.9396,
+            "tpr": 0.9471
+          },
+          {
+            "fpr": 0.9537,
+            "tpr": 0.9638
+          },
+          {
+            "fpr": 0.9658,
+            "tpr": 0.9749
+          },
+          {
+            "fpr": 0.9738,
+            "tpr": 0.9838
+          },
+          {
+            "fpr": 0.9839,
+            "tpr": 0.9887
+          },
+          {
+            "fpr": 0.9899,
+            "tpr": 0.9924
+          },
+          {
+            "fpr": 0.994,
+            "tpr": 0.9938
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 0.9958
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 0.9973
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 0.9978
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 0.9984
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 0.9987
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 0.9996
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "auc": 0.5037
+      }
+    },
+    {
+      "key": "Is_Holiday_Shopper",
+      "label": "Seasonal (Holiday) Shopper",
+      "description": "Whether a customer peaks during the holiday period.",
+      "note": "The holiday flag is derived from 'Time Period Highest Purchase'; the original track keeps its one-hot columns (leakage). Corrected track removes them.",
+      "positiveRate": 0.1938,
+      "baselineAccuracy": 80.62,
+      "dissertationPca": {
+        "Logistic Regression": 95.53,
+        "KNN": 94.29,
+        "Linear SVM": 95.54,
+        "Kernel SVM": 95.99,
+        "Naive Bayes": 95.19,
+        "Decision Tree": 93.37,
+        "Random Forest": 95.82
+      },
+      "reproductionPca": {
+        "Logistic Regression": 99.95,
+        "KNN": 99.85,
+        "Linear SVM": 99.95,
+        "Kernel SVM": 99.95,
+        "Naive Bayes": 99.57,
+        "Decision Tree": 99.73,
+        "Random Forest": 99.8
+      },
+      "reproductionLda": {
+        "Logistic Regression": 99.9,
+        "KNN": 99.9,
+        "Linear SVM": 99.9,
+        "Kernel SVM": 99.9,
+        "Naive Bayes": 99.9,
+        "Decision Tree": 99.88,
+        "Random Forest": 99.88
+      },
+      "corrected": {
+        "Logistic Regression": {
+          "accuracy": 50.92,
+          "precision": 19.83,
+          "recall": 50.36,
+          "f1": 28.45,
+          "rocAuc": 0.5128,
+          "cvMean": 51.02,
+          "cvStd": 0.5
+        },
+        "KNN": {
+          "accuracy": 77.58,
+          "precision": 19.6,
+          "recall": 5.06,
+          "f1": 8.04,
+          "rocAuc": 0.5028,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Linear SVM": {
+          "accuracy": 50.84,
+          "precision": 19.8,
+          "recall": 50.36,
+          "f1": 28.42,
+          "rocAuc": 0.5129,
+          "cvMean": 51.07,
+          "cvStd": 0.48
+        },
+        "Kernel SVM": {
+          "accuracy": 58.52,
+          "precision": 20.25,
+          "recall": 38.8,
+          "f1": 26.61,
+          "rocAuc": 0.5182,
+          "cvMean": null,
+          "cvStd": null
+        },
+        "Naive Bayes": {
+          "accuracy": 80.46,
+          "precision": 25.0,
+          "recall": 0.41,
+          "f1": 0.81,
+          "rocAuc": 0.5179,
+          "cvMean": 80.29,
+          "cvStd": 0.17
+        },
+        "Decision Tree": {
+          "accuracy": 46.42,
+          "precision": 19.51,
+          "recall": 56.45,
+          "f1": 29.0,
+          "rocAuc": 0.4917,
+          "cvMean": 47.57,
+          "cvStd": 7.7
+        },
+        "Random Forest": {
+          "accuracy": 80.62,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "rocAuc": 0.5137,
+          "cvMean": 80.62,
+          "cvStd": 0.01
+        }
+      },
+      "headline": "Random Forest",
+      "confusionMatrix": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            4031,
+            0
+          ],
+          [
+            969,
+            0
+          ]
+        ]
+      },
+      "roc": {
+        "model": "Random Forest",
+        "points": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0002,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0005,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0012,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0015,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0017,
+            "tpr": 0.001
+          },
+          {
+            "fpr": 0.002,
+            "tpr": 0.001
+          },
+          {
+            "fpr": 0.0025,
+            "tpr": 0.0021
+          },
+          {
+            "fpr": 0.0035,
+            "tpr": 0.0021
+          },
+          {
+            "fpr": 0.0042,
+            "tpr": 0.0041
+          },
+          {
+            "fpr": 0.0067,
+            "tpr": 0.0083
+          },
+          {
+            "fpr": 0.0089,
+            "tpr": 0.0144
+          },
+          {
+            "fpr": 0.0117,
+            "tpr": 0.0155
+          },
+          {
+            "fpr": 0.0194,
+            "tpr": 0.0268
+          },
+          {
+            "fpr": 0.027,
+            "tpr": 0.0495
+          },
+          {
+            "fpr": 0.0394,
+            "tpr": 0.0702
+          },
+          {
+            "fpr": 0.0561,
+            "tpr": 0.0888
+          },
+          {
+            "fpr": 0.0759,
+            "tpr": 0.1084
+          },
+          {
+            "fpr": 0.0977,
+            "tpr": 0.1259
+          },
+          {
+            "fpr": 0.1263,
+            "tpr": 0.1507
+          },
+          {
+            "fpr": 0.1613,
+            "tpr": 0.1796
+          },
+          {
+            "fpr": 0.2024,
+            "tpr": 0.2332
+          },
+          {
+            "fpr": 0.252,
+            "tpr": 0.2714
+          },
+          {
+            "fpr": 0.3032,
+            "tpr": 0.3117
+          },
+          {
+            "fpr": 0.3614,
+            "tpr": 0.3571
+          },
+          {
+            "fpr": 0.4279,
+            "tpr": 0.4396
+          },
+          {
+            "fpr": 0.5629,
+            "tpr": 0.5645
+          },
+          {
+            "fpr": 0.6294,
+            "tpr": 0.6471
+          },
+          {
+            "fpr": 0.6929,
+            "tpr": 0.7203
+          },
+          {
+            "fpr": 0.7499,
+            "tpr": 0.7771
+          },
+          {
+            "fpr": 0.8048,
+            "tpr": 0.8163
+          },
+          {
+            "fpr": 0.8536,
+            "tpr": 0.8638
+          },
+          {
+            "fpr": 0.8928,
+            "tpr": 0.8968
+          },
+          {
+            "fpr": 0.9263,
+            "tpr": 0.9278
+          },
+          {
+            "fpr": 0.9491,
+            "tpr": 0.9556
+          },
+          {
+            "fpr": 0.9665,
+            "tpr": 0.9773
+          },
+          {
+            "fpr": 0.9816,
+            "tpr": 0.9835
+          },
+          {
+            "fpr": 0.9918,
+            "tpr": 0.9928
+          },
+          {
+            "fpr": 0.996,
+            "tpr": 0.9979
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "auc": 0.5137
+      }
+    }
+  ],
+  "featureImportance": [
+    {
+      "feature": "Price",
+      "importance": 0.11
+    },
+    {
+      "feature": "Review Count",
+      "importance": 0.1052
+    },
+    {
+      "feature": "Age",
+      "importance": 0.091
+    },
+    {
+      "feature": "PurchaseHistory Encoded",
+      "importance": 0.0619
+    },
+    {
+      "feature": "Description Encoded",
+      "importance": 0.0524
+    },
+    {
+      "feature": "Season Encoded",
+      "importance": 0.0504
+    },
+    {
+      "feature": "Color Red",
+      "importance": 0.0152
+    },
+    {
+      "feature": "Color Blue",
+      "importance": 0.015
+    },
+    {
+      "feature": "Color Green",
+      "importance": 0.0148
+    },
+    {
+      "feature": "Time Period Highest Purchase Evening",
+      "importance": 0.0137
+    },
+    {
+      "feature": "Time Period Highest Purchase Nighttime",
+      "importance": 0.0131
+    },
+    {
+      "feature": "Time Period Highest Purchase Holiday",
+      "importance": 0.0126
+    }
+  ]
+}

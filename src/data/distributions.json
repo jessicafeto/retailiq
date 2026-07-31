@@ -1,0 +1,834 @@
+{
+  "numeric": {
+    "Price": {
+      "bins": [
+        {
+          "x0": 10.0001,
+          "x1": 13.7501,
+          "center": 11.8751,
+          "count": 41816
+        },
+        {
+          "x0": 13.7501,
+          "x1": 17.5001,
+          "center": 15.6251,
+          "count": 41362
+        },
+        {
+          "x0": 17.5001,
+          "x1": 21.2501,
+          "center": 19.3751,
+          "count": 41914
+        },
+        {
+          "x0": 21.2501,
+          "x1": 25.0001,
+          "center": 23.1251,
+          "count": 41523
+        },
+        {
+          "x0": 25.0001,
+          "x1": 28.75,
+          "center": 26.8751,
+          "count": 42058
+        },
+        {
+          "x0": 28.75,
+          "x1": 32.5,
+          "center": 30.625,
+          "count": 41360
+        },
+        {
+          "x0": 32.5,
+          "x1": 36.25,
+          "center": 34.375,
+          "count": 41530
+        },
+        {
+          "x0": 36.25,
+          "x1": 40.0,
+          "center": 38.125,
+          "count": 41597
+        },
+        {
+          "x0": 40.0,
+          "x1": 43.75,
+          "center": 41.875,
+          "count": 41522
+        },
+        {
+          "x0": 43.75,
+          "x1": 47.4999,
+          "center": 45.6249,
+          "count": 41901
+        },
+        {
+          "x0": 47.4999,
+          "x1": 51.2499,
+          "center": 49.3749,
+          "count": 41805
+        },
+        {
+          "x0": 51.2499,
+          "x1": 54.9999,
+          "center": 53.1249,
+          "count": 41523
+        },
+        {
+          "x0": 54.9999,
+          "x1": 58.7499,
+          "center": 56.8749,
+          "count": 41652
+        },
+        {
+          "x0": 58.7499,
+          "x1": 62.4999,
+          "center": 60.6249,
+          "count": 41693
+        },
+        {
+          "x0": 62.4999,
+          "x1": 66.2498,
+          "center": 64.3748,
+          "count": 41601
+        },
+        {
+          "x0": 66.2498,
+          "x1": 69.9998,
+          "center": 68.1248,
+          "count": 41494
+        },
+        {
+          "x0": 69.9998,
+          "x1": 73.7498,
+          "center": 71.8748,
+          "count": 41865
+        },
+        {
+          "x0": 73.7498,
+          "x1": 77.4998,
+          "center": 75.6248,
+          "count": 41653
+        },
+        {
+          "x0": 77.4998,
+          "x1": 81.2498,
+          "center": 79.3748,
+          "count": 41749
+        },
+        {
+          "x0": 81.2498,
+          "x1": 84.9997,
+          "center": 83.1247,
+          "count": 41715
+        },
+        {
+          "x0": 84.9997,
+          "x1": 88.7497,
+          "center": 86.8747,
+          "count": 42080
+        },
+        {
+          "x0": 88.7497,
+          "x1": 92.4997,
+          "center": 90.6247,
+          "count": 41615
+        },
+        {
+          "x0": 92.4997,
+          "x1": 96.2497,
+          "center": 94.3747,
+          "count": 41554
+        },
+        {
+          "x0": 96.2497,
+          "x1": 99.9996,
+          "center": 98.1247,
+          "count": 41418
+        }
+      ]
+    },
+    "Rating": {
+      "bins": [
+        {
+          "x0": 1.0,
+          "x1": 1.8,
+          "center": 1.4,
+          "count": 200455
+        },
+        {
+          "x0": 1.8,
+          "x1": 2.6,
+          "center": 2.2,
+          "count": 199996
+        },
+        {
+          "x0": 2.6,
+          "x1": 3.4,
+          "center": 3.0,
+          "count": 200157
+        },
+        {
+          "x0": 3.4,
+          "x1": 4.2,
+          "center": 3.8,
+          "count": 199676
+        },
+        {
+          "x0": 4.2,
+          "x1": 5.0,
+          "center": 4.6,
+          "count": 199716
+        }
+      ]
+    },
+    "Review Count": {
+      "bins": [
+        {
+          "x0": 0.0,
+          "x1": 20.7917,
+          "center": 10.3958,
+          "count": 41974
+        },
+        {
+          "x0": 20.7917,
+          "x1": 41.5833,
+          "center": 31.1875,
+          "count": 41988
+        },
+        {
+          "x0": 41.5833,
+          "x1": 62.375,
+          "center": 51.9792,
+          "count": 42172
+        },
+        {
+          "x0": 62.375,
+          "x1": 83.1667,
+          "center": 72.7708,
+          "count": 41789
+        },
+        {
+          "x0": 83.1667,
+          "x1": 103.9583,
+          "center": 93.5625,
+          "count": 40019
+        },
+        {
+          "x0": 103.9583,
+          "x1": 124.75,
+          "center": 114.3542,
+          "count": 42001
+        },
+        {
+          "x0": 124.75,
+          "x1": 145.5417,
+          "center": 135.1458,
+          "count": 41903
+        },
+        {
+          "x0": 145.5417,
+          "x1": 166.3333,
+          "center": 155.9375,
+          "count": 41550
+        },
+        {
+          "x0": 166.3333,
+          "x1": 187.125,
+          "center": 176.7292,
+          "count": 41923
+        },
+        {
+          "x0": 187.125,
+          "x1": 207.9167,
+          "center": 197.5208,
+          "count": 40273
+        },
+        {
+          "x0": 207.9167,
+          "x1": 228.7083,
+          "center": 218.3125,
+          "count": 42286
+        },
+        {
+          "x0": 228.7083,
+          "x1": 249.5,
+          "center": 239.1042,
+          "count": 42161
+        },
+        {
+          "x0": 249.5,
+          "x1": 270.2917,
+          "center": 259.8958,
+          "count": 42212
+        },
+        {
+          "x0": 270.2917,
+          "x1": 291.0833,
+          "center": 280.6875,
+          "count": 41348
+        },
+        {
+          "x0": 291.0833,
+          "x1": 311.875,
+          "center": 301.4792,
+          "count": 39839
+        },
+        {
+          "x0": 311.875,
+          "x1": 332.6667,
+          "center": 322.2708,
+          "count": 42227
+        },
+        {
+          "x0": 332.6667,
+          "x1": 353.4583,
+          "center": 343.0625,
+          "count": 42158
+        },
+        {
+          "x0": 353.4583,
+          "x1": 374.25,
+          "center": 363.8542,
+          "count": 41934
+        },
+        {
+          "x0": 374.25,
+          "x1": 395.0417,
+          "center": 384.6458,
+          "count": 41617
+        },
+        {
+          "x0": 395.0417,
+          "x1": 415.8333,
+          "center": 405.4375,
+          "count": 40269
+        },
+        {
+          "x0": 415.8333,
+          "x1": 436.625,
+          "center": 426.2292,
+          "count": 42017
+        },
+        {
+          "x0": 436.625,
+          "x1": 457.4167,
+          "center": 447.0208,
+          "count": 42241
+        },
+        {
+          "x0": 457.4167,
+          "x1": 478.2083,
+          "center": 467.8125,
+          "count": 42155
+        },
+        {
+          "x0": 478.2083,
+          "x1": 499.0,
+          "center": 488.6042,
+          "count": 41944
+        }
+      ]
+    },
+    "Age": {
+      "bins": [
+        {
+          "x0": 18.0,
+          "x1": 19.9167,
+          "center": 18.9583,
+          "count": 42458
+        },
+        {
+          "x0": 19.9167,
+          "x1": 21.8333,
+          "center": 20.875,
+          "count": 42508
+        },
+        {
+          "x0": 21.8333,
+          "x1": 23.75,
+          "center": 22.7917,
+          "count": 42494
+        },
+        {
+          "x0": 23.75,
+          "x1": 25.6667,
+          "center": 24.7083,
+          "count": 42597
+        },
+        {
+          "x0": 25.6667,
+          "x1": 27.5833,
+          "center": 26.625,
+          "count": 42596
+        },
+        {
+          "x0": 27.5833,
+          "x1": 29.5,
+          "center": 28.5417,
+          "count": 42594
+        },
+        {
+          "x0": 29.5,
+          "x1": 31.4167,
+          "center": 30.4583,
+          "count": 42788
+        },
+        {
+          "x0": 31.4167,
+          "x1": 33.3333,
+          "center": 32.375,
+          "count": 42488
+        },
+        {
+          "x0": 33.3333,
+          "x1": 35.25,
+          "center": 34.2917,
+          "count": 42392
+        },
+        {
+          "x0": 35.25,
+          "x1": 37.1667,
+          "center": 36.2083,
+          "count": 42480
+        },
+        {
+          "x0": 37.1667,
+          "x1": 39.0833,
+          "center": 38.125,
+          "count": 42602
+        },
+        {
+          "x0": 39.0833,
+          "x1": 41.0,
+          "center": 40.0417,
+          "count": 21260
+        },
+        {
+          "x0": 41.0,
+          "x1": 42.9167,
+          "center": 41.9583,
+          "count": 42447
+        },
+        {
+          "x0": 42.9167,
+          "x1": 44.8333,
+          "center": 43.875,
+          "count": 42481
+        },
+        {
+          "x0": 44.8333,
+          "x1": 46.75,
+          "center": 45.7917,
+          "count": 42862
+        },
+        {
+          "x0": 46.75,
+          "x1": 48.6667,
+          "center": 47.7083,
+          "count": 42599
+        },
+        {
+          "x0": 48.6667,
+          "x1": 50.5833,
+          "center": 49.625,
+          "count": 42463
+        },
+        {
+          "x0": 50.5833,
+          "x1": 52.5,
+          "center": 51.5417,
+          "count": 42506
+        },
+        {
+          "x0": 52.5,
+          "x1": 54.4167,
+          "center": 53.4583,
+          "count": 42570
+        },
+        {
+          "x0": 54.4167,
+          "x1": 56.3333,
+          "center": 55.375,
+          "count": 42341
+        },
+        {
+          "x0": 56.3333,
+          "x1": 58.25,
+          "center": 57.2917,
+          "count": 42635
+        },
+        {
+          "x0": 58.25,
+          "x1": 60.1667,
+          "center": 59.2083,
+          "count": 42418
+        },
+        {
+          "x0": 60.1667,
+          "x1": 62.0833,
+          "center": 61.125,
+          "count": 42660
+        },
+        {
+          "x0": 62.0833,
+          "x1": 64.0,
+          "center": 63.0417,
+          "count": 42761
+        }
+      ]
+    }
+  },
+  "categorical": {
+    "Brand": [
+      {
+        "label": "Ralph Lauren",
+        "count": 125575
+      },
+      {
+        "label": "Jigsaw",
+        "count": 125307
+      },
+      {
+        "label": "Tommy Hilfiger",
+        "count": 125275
+      },
+      {
+        "label": "Alexander McQueen",
+        "count": 125127
+      },
+      {
+        "label": "Burberry",
+        "count": 124813
+      },
+      {
+        "label": "Calvin Klein",
+        "count": 124710
+      },
+      {
+        "label": "Mulberry",
+        "count": 124662
+      },
+      {
+        "label": "Ted Baker",
+        "count": 124531
+      }
+    ],
+    "Category": [
+      {
+        "label": "Swimwear",
+        "count": 100328
+      },
+      {
+        "label": "Accessories",
+        "count": 100291
+      },
+      {
+        "label": "Jewelry",
+        "count": 100155
+      },
+      {
+        "label": "Outerwear",
+        "count": 100076
+      },
+      {
+        "label": "Tops",
+        "count": 100041
+      },
+      {
+        "label": "Dresses",
+        "count": 99950
+      },
+      {
+        "label": "Lingerie",
+        "count": 99949
+      },
+      {
+        "label": "Footwear",
+        "count": 99793
+      },
+      {
+        "label": "Activewear",
+        "count": 99751
+      },
+      {
+        "label": "Bottoms",
+        "count": 99666
+      }
+    ],
+    "Style Attributes": [
+      {
+        "label": "Bohemian",
+        "count": 100212
+      },
+      {
+        "label": "Vintage",
+        "count": 100201
+      },
+      {
+        "label": "Minimalist",
+        "count": 100052
+      },
+      {
+        "label": "Streetwear",
+        "count": 100042
+      },
+      {
+        "label": "Formal",
+        "count": 99988
+      },
+      {
+        "label": "Edgy",
+        "count": 99959
+      },
+      {
+        "label": "Preppy",
+        "count": 99952
+      },
+      {
+        "label": "Casual",
+        "count": 99930
+      },
+      {
+        "label": "Sporty",
+        "count": 99876
+      },
+      {
+        "label": "Glamorous",
+        "count": 99788
+      }
+    ],
+    "Season": [
+      {
+        "label": "Spring",
+        "count": 167217
+      },
+      {
+        "label": "Fall",
+        "count": 167194
+      },
+      {
+        "label": "Winter",
+        "count": 166878
+      },
+      {
+        "label": "Fall/Winter",
+        "count": 166748
+      },
+      {
+        "label": "Spring/Summer",
+        "count": 166101
+      },
+      {
+        "label": "Summer",
+        "count": 165862
+      }
+    ],
+    "Color": [
+      {
+        "label": "Blue",
+        "count": 250498
+      },
+      {
+        "label": "Black",
+        "count": 249945
+      },
+      {
+        "label": "Green",
+        "count": 249891
+      },
+      {
+        "label": "Red",
+        "count": 249666
+      }
+    ],
+    "Description": [
+      {
+        "label": "Bad",
+        "count": 143636
+      },
+      {
+        "label": "Very Bad",
+        "count": 143528
+      },
+      {
+        "label": "Worst",
+        "count": 142984
+      },
+      {
+        "label": "Not Good",
+        "count": 142766
+      },
+      {
+        "label": "Best",
+        "count": 142560
+      },
+      {
+        "label": "Good",
+        "count": 142494
+      },
+      {
+        "label": "Very Good",
+        "count": 142032
+      }
+    ],
+    "Purchase History": [
+      {
+        "label": "Very Low",
+        "count": 100311
+      },
+      {
+        "label": "Above Average",
+        "count": 100284
+      },
+      {
+        "label": "Low",
+        "count": 100164
+      },
+      {
+        "label": "Average",
+        "count": 100046
+      },
+      {
+        "label": "Medium",
+        "count": 100016
+      },
+      {
+        "label": "Negligible",
+        "count": 99990
+      },
+      {
+        "label": "High",
+        "count": 99977
+      },
+      {
+        "label": "Below Average",
+        "count": 99881
+      },
+      {
+        "label": "Significant",
+        "count": 99679
+      },
+      {
+        "label": "Very High",
+        "count": 99652
+      }
+    ],
+    "Time Period Highest Purchase": [
+      {
+        "label": "Weekend",
+        "count": 200240
+      },
+      {
+        "label": "Holiday",
+        "count": 200189
+      },
+      {
+        "label": "Evening",
+        "count": 200088
+      },
+      {
+        "label": "Daytime",
+        "count": 199857
+      },
+      {
+        "label": "Nighttime",
+        "count": 199626
+      }
+    ]
+  },
+  "ageGroup": [
+    {
+      "label": "Young Adults",
+      "count": 170057
+    },
+    {
+      "label": "Millennials",
+      "count": 212858
+    },
+    {
+      "label": "Gen X",
+      "count": 319194
+    },
+    {
+      "label": "Boomers",
+      "count": 297891
+    }
+  ],
+  "sentiment": {
+    "Social Media Comments": [
+      {
+        "label": "Positive",
+        "count": 166815
+      },
+      {
+        "label": "Other",
+        "count": 166786
+      },
+      {
+        "label": "Negative",
+        "count": 166778
+      },
+      {
+        "label": "Mixed",
+        "count": 166731
+      },
+      {
+        "label": "Neutral",
+        "count": 166658
+      },
+      {
+        "label": "Unknown",
+        "count": 166232
+      }
+    ],
+    "Customer Reviews": [
+      {
+        "label": "Negative",
+        "count": 200359
+      },
+      {
+        "label": "Positive",
+        "count": 200173
+      },
+      {
+        "label": "Mixed",
+        "count": 200029
+      },
+      {
+        "label": "Neutral",
+        "count": 200028
+      },
+      {
+        "label": "Unknown",
+        "count": 199411
+      }
+    ],
+    "feedback": [
+      {
+        "label": "Unknown",
+        "count": 166957
+      },
+      {
+        "label": "Positive",
+        "count": 166853
+      },
+      {
+        "label": "Negative",
+        "count": 166727
+      },
+      {
+        "label": "Mixed",
+        "count": 166649
+      },
+      {
+        "label": "Neutral",
+        "count": 166504
+      },
+      {
+        "label": "Other",
+        "count": 166310
+      }
+    ]
+  }
+}

@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# RetailIQ pipeline
+pipeline/data/raw/
+pipeline/.venv/
+pipeline/__pycache__/
+*.pyc

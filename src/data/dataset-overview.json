@@ -1,0 +1,101 @@
+{
+  "generatedRows": 1000000,
+  "sourceRows": 1000000,
+  "columns": 20,
+  "isSimulated": true,
+  "note": "Simulated fashion retail dataset (Kaggle). The original MSc study used a 29,730-row sample; RetailIQ analyses the full 1,000,000-row dataset. Figures demonstrate methodology, not real market data.",
+  "cardinality": {
+    "brands": 8,
+    "categories": 10,
+    "styles": 10,
+    "seasons": 6,
+    "colors": 4
+  },
+  "brands": [
+    "Alexander McQueen",
+    "Burberry",
+    "Calvin Klein",
+    "Jigsaw",
+    "Mulberry",
+    "Ralph Lauren",
+    "Ted Baker",
+    "Tommy Hilfiger"
+  ],
+  "categories": [
+    "Accessories",
+    "Activewear",
+    "Bottoms",
+    "Dresses",
+    "Footwear",
+    "Jewelry",
+    "Lingerie",
+    "Outerwear",
+    "Swimwear",
+    "Tops"
+  ],
+  "styles": [
+    "Bohemian",
+    "Casual",
+    "Edgy",
+    "Formal",
+    "Glamorous",
+    "Minimalist",
+    "Preppy",
+    "Sporty",
+    "Streetwear",
+    "Vintage"
+  ],
+  "seasons": [
+    "Fall",
+    "Fall/Winter",
+    "Spring",
+    "Spring/Summer",
+    "Summer",
+    "Winter"
+  ],
+  "colors": [
+    "Black",
+    "Blue",
+    "Green",
+    "Red"
+  ],
+  "numeric": {
+    "Price": {
+      "min": 10.0001,
+      "max": 99.9996,
+      "mean": 55.0014,
+      "median": 55.0074,
+      "std": 25.9797,
+      "q1": 32.4967,
+      "q3": 77.5112
+    },
+    "Rating": {
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 2.9985,
+      "median": 2.9963,
+      "std": 1.1547,
+      "q1": 1.9986,
+      "q3": 3.9985
+    },
+    "Review Count": {
+      "min": 0.0,
+      "max": 499.0,
+      "mean": 249.6024,
+      "median": 249.0,
+      "std": 144.3626,
+      "q1": 125.0,
+      "q3": 375.0
+    },
+    "Age": {
+      "min": 18.0,
+      "max": 64.0,
+      "mean": 41.0042,
+      "median": 41.0,
+      "std": 13.5659,
+      "q1": 29.0,
+      "q3": 53.0
+    }
+  },
+  "missingValues": 0
+}

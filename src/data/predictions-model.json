@@ -1,0 +1,136 @@
+{
+  "target": "Is_Satisfied",
+  "targetLabel": "Customer Satisfaction",
+  "type": "logistic",
+  "trainAccuracy": 51.48,
+  "trainRocAuc": 0.5204,
+  "baselineAccuracy": 50.17,
+  "intercept": 0.0397,
+  "numericFeatures": [
+    {
+      "name": "Price",
+      "mean": 55.3168,
+      "std": 25.9175
+    },
+    {
+      "name": "Review Count",
+      "mean": 249.6741,
+      "std": 144.3485
+    },
+    {
+      "name": "Age",
+      "mean": 40.8689,
+      "std": 13.4896
+    },
+    {
+      "name": "SocialMedia_Polarity",
+      "mean": -0.0123,
+      "std": 0.1543
+    },
+    {
+      "name": "CustomerReviews_Polarity",
+      "mean": -0.0115,
+      "std": 0.1673
+    },
+    {
+      "name": "Feedback_Polarity",
+      "mean": -0.0127,
+      "std": 0.1534
+    }
+  ],
+  "categoricalFeatures": [
+    {
+      "name": "Brand",
+      "options": [
+        "Alexander McQueen",
+        "Burberry",
+        "Calvin Klein",
+        "Jigsaw",
+        "Mulberry",
+        "Ralph Lauren",
+        "Ted Baker",
+        "Tommy Hilfiger"
+      ]
+    },
+    {
+      "name": "Category",
+      "options": [
+        "Accessories",
+        "Activewear",
+        "Bottoms",
+        "Dresses",
+        "Footwear",
+        "Jewelry",
+        "Lingerie",
+        "Outerwear",
+        "Swimwear",
+        "Tops"
+      ]
+    },
+    {
+      "name": "Style Attributes",
+      "options": [
+        "Bohemian",
+        "Casual",
+        "Edgy",
+        "Formal",
+        "Glamorous",
+        "Minimalist",
+        "Preppy",
+        "Sporty",
+        "Streetwear",
+        "Vintage"
+      ]
+    },
+    {
+      "name": "Season",
+      "options": [
+        "Fall",
+        "Fall/Winter",
+        "Spring",
+        "Spring/Summer",
+        "Summer",
+        "Winter"
+      ]
+    }
+  ],
+  "coefficients": {
+    "Price": 0.002,
+    "Review Count": -0.0081,
+    "Age": -0.0022,
+    "SocialMedia_Polarity": -0.0005,
+    "CustomerReviews_Polarity": 0.0163,
+    "Feedback_Polarity": -0.0278,
+    "Brand_Burberry": -0.1099,
+    "Brand_Calvin Klein": -0.09,
+    "Brand_Jigsaw": -0.0699,
+    "Brand_Mulberry": -0.0301,
+    "Brand_Ralph Lauren": -0.0872,
+    "Brand_Ted Baker": -0.0941,
+    "Brand_Tommy Hilfiger": -0.0845,
+    "Category_Activewear": 0.0936,
+    "Category_Bottoms": 0.0461,
+    "Category_Dresses": 0.0805,
+    "Category_Footwear": 0.096,
+    "Category_Jewelry": 0.0829,
+    "Category_Lingerie": 0.136,
+    "Category_Outerwear": 0.0969,
+    "Category_Swimwear": 0.0468,
+    "Category_Tops": 0.0152,
+    "Style Attributes_Casual": -0.0507,
+    "Style Attributes_Edgy": -0.0937,
+    "Style Attributes_Formal": -0.0585,
+    "Style Attributes_Glamorous": -0.0788,
+    "Style Attributes_Minimalist": -0.0649,
+    "Style Attributes_Preppy": -0.0792,
+    "Style Attributes_Sporty": -0.0576,
+    "Style Attributes_Streetwear": -0.0962,
+    "Style Attributes_Vintage": -0.0953,
+    "Season_Fall/Winter": 0.0205,
+    "Season_Spring": 0.0518,
+    "Season_Spring/Summer": 0.0123,
+    "Season_Summer": 0.0486,
+    "Season_Winter": 0.0415
+  },
+  "note": "A real logistic-regression model trained on the simulated dataset. Because the data is largely uniform, performance sits close to the majority-class baseline \u2014 the prediction is honest, not inflated. Runs entirely in your browser."
+}

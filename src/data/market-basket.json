@@ -1,0 +1,578 @@
+{
+  "params": {
+    "minSupport": 0.01,
+    "liftThreshold": 1.0,
+    "sampleSize": 200000
+  },
+  "ruleCount": 60,
+  "rules": [
+    {
+      "antecedent": "Category_Tops",
+      "consequent": "Style_Glamorous",
+      "support": 0.0105,
+      "confidence": 0.1043,
+      "lift": 1.0393
+    },
+    {
+      "antecedent": "Style_Glamorous",
+      "consequent": "Category_Tops",
+      "support": 0.0105,
+      "confidence": 0.1047,
+      "lift": 1.0393
+    },
+    {
+      "antecedent": "Style_Edgy",
+      "consequent": "Category_Accessories",
+      "support": 0.0104,
+      "confidence": 0.1038,
+      "lift": 1.0345
+    },
+    {
+      "antecedent": "Category_Accessories",
+      "consequent": "Style_Edgy",
+      "support": 0.0104,
+      "confidence": 0.1037,
+      "lift": 1.0345
+    },
+    {
+      "antecedent": "Category_Footwear",
+      "consequent": "Style_Glamorous",
+      "support": 0.0103,
+      "confidence": 0.1038,
+      "lift": 1.0345
+    },
+    {
+      "antecedent": "Style_Glamorous",
+      "consequent": "Category_Footwear",
+      "support": 0.0103,
+      "confidence": 0.1031,
+      "lift": 1.0345
+    },
+    {
+      "antecedent": "Style_Streetwear",
+      "consequent": "Category_Lingerie",
+      "support": 0.0104,
+      "confidence": 0.1033,
+      "lift": 1.0327
+    },
+    {
+      "antecedent": "Category_Lingerie",
+      "consequent": "Style_Streetwear",
+      "support": 0.0104,
+      "confidence": 0.1043,
+      "lift": 1.0327
+    },
+    {
+      "antecedent": "Style_Edgy",
+      "consequent": "Category_Lingerie",
+      "support": 0.0103,
+      "confidence": 0.1032,
+      "lift": 1.0315
+    },
+    {
+      "antecedent": "Category_Lingerie",
+      "consequent": "Style_Edgy",
+      "support": 0.0103,
+      "confidence": 0.1034,
+      "lift": 1.0315
+    },
+    {
+      "antecedent": "Style_Preppy",
+      "consequent": "Category_Dresses",
+      "support": 0.0101,
+      "confidence": 0.102,
+      "lift": 1.0293
+    },
+    {
+      "antecedent": "Category_Dresses",
+      "consequent": "Style_Preppy",
+      "support": 0.0101,
+      "confidence": 0.1021,
+      "lift": 1.0293
+    },
+    {
+      "antecedent": "Style_Bohemian",
+      "consequent": "Category_Activewear",
+      "support": 0.0103,
+      "confidence": 0.1026,
+      "lift": 1.0288
+    },
+    {
+      "antecedent": "Category_Activewear",
+      "consequent": "Style_Bohemian",
+      "support": 0.0103,
+      "confidence": 0.1036,
+      "lift": 1.0288
+    },
+    {
+      "antecedent": "Style_Bohemian",
+      "consequent": "Category_Dresses",
+      "support": 0.0103,
+      "confidence": 0.102,
+      "lift": 1.0288
+    },
+    {
+      "antecedent": "Category_Dresses",
+      "consequent": "Style_Bohemian",
+      "support": 0.0103,
+      "confidence": 0.1036,
+      "lift": 1.0288
+    },
+    {
+      "antecedent": "Style_Minimalist",
+      "consequent": "Category_Footwear",
+      "support": 0.01,
+      "confidence": 0.1019,
+      "lift": 1.0226
+    },
+    {
+      "antecedent": "Category_Footwear",
+      "consequent": "Style_Minimalist",
+      "support": 0.01,
+      "confidence": 0.1008,
+      "lift": 1.0226
+    },
+    {
+      "antecedent": "Style_Casual",
+      "consequent": "Category_Swimwear",
+      "support": 0.0102,
+      "confidence": 0.1027,
+      "lift": 1.0217
+    },
+    {
+      "antecedent": "Category_Swimwear",
+      "consequent": "Style_Casual",
+      "support": 0.0102,
+      "confidence": 0.1016,
+      "lift": 1.0217
+    },
+    {
+      "antecedent": "Category_Bottoms",
+      "consequent": "Style_Casual",
+      "support": 0.01,
+      "confidence": 0.1014,
+      "lift": 1.0205
+    },
+    {
+      "antecedent": "Style_Casual",
+      "consequent": "Category_Bottoms",
+      "support": 0.01,
+      "confidence": 0.1007,
+      "lift": 1.0205
+    },
+    {
+      "antecedent": "Category_Outerwear",
+      "consequent": "Style_Preppy",
+      "support": 0.0102,
+      "confidence": 0.1011,
+      "lift": 1.02
+    },
+    {
+      "antecedent": "Style_Preppy",
+      "consequent": "Category_Outerwear",
+      "support": 0.0102,
+      "confidence": 0.1029,
+      "lift": 1.02
+    },
+    {
+      "antecedent": "Category_Outerwear",
+      "consequent": "Style_Formal",
+      "support": 0.0103,
+      "confidence": 0.1016,
+      "lift": 1.0192
+    },
+    {
+      "antecedent": "Style_Formal",
+      "consequent": "Category_Outerwear",
+      "support": 0.0103,
+      "confidence": 0.1028,
+      "lift": 1.0192
+    },
+    {
+      "antecedent": "Category_Jewelry",
+      "consequent": "Style_Streetwear",
+      "support": 0.0103,
+      "confidence": 0.103,
+      "lift": 1.0192
+    },
+    {
+      "antecedent": "Style_Streetwear",
+      "consequent": "Category_Jewelry",
+      "support": 0.0103,
+      "confidence": 0.1022,
+      "lift": 1.0192
+    },
+    {
+      "antecedent": "Category_Outerwear",
+      "consequent": "Style_Vintage",
+      "support": 0.0103,
+      "confidence": 0.1023,
+      "lift": 1.0178
+    },
+    {
+      "antecedent": "Style_Vintage",
+      "consequent": "Category_Outerwear",
+      "support": 0.0103,
+      "confidence": 0.1027,
+      "lift": 1.0178
+    },
+    {
+      "antecedent": "Style_Glamorous",
+      "consequent": "Category_Dresses",
+      "support": 0.0101,
+      "confidence": 0.1008,
+      "lift": 1.0168
+    },
+    {
+      "antecedent": "Category_Dresses",
+      "consequent": "Style_Glamorous",
+      "support": 0.0101,
+      "confidence": 0.102,
+      "lift": 1.0168
+    },
+    {
+      "antecedent": "Style_Streetwear",
+      "consequent": "Category_Bottoms",
+      "support": 0.0101,
+      "confidence": 0.1003,
+      "lift": 1.0161
+    },
+    {
+      "antecedent": "Category_Bottoms",
+      "consequent": "Style_Streetwear",
+      "support": 0.0101,
+      "confidence": 0.1027,
+      "lift": 1.0161
+    },
+    {
+      "antecedent": "Style_Casual",
+      "consequent": "Category_Lingerie",
+      "support": 0.0101,
+      "confidence": 0.1015,
+      "lift": 1.0154
+    },
+    {
+      "antecedent": "Category_Lingerie",
+      "consequent": "Style_Casual",
+      "support": 0.0101,
+      "confidence": 0.1009,
+      "lift": 1.0154
+    },
+    {
+      "antecedent": "Category_Jewelry",
+      "consequent": "Style_Vintage",
+      "support": 0.0102,
+      "confidence": 0.102,
+      "lift": 1.0154
+    },
+    {
+      "antecedent": "Style_Vintage",
+      "consequent": "Category_Jewelry",
+      "support": 0.0102,
+      "confidence": 0.1019,
+      "lift": 1.0154
+    },
+    {
+      "antecedent": "Category_Accessories",
+      "consequent": "Style_Formal",
+      "support": 0.0102,
+      "confidence": 0.1012,
+      "lift": 1.015
+    },
+    {
+      "antecedent": "Style_Formal",
+      "consequent": "Category_Accessories",
+      "support": 0.0102,
+      "confidence": 0.1018,
+      "lift": 1.015
+    },
+    {
+      "antecedent": "Category_Footwear",
+      "consequent": "Style_Bohemian",
+      "support": 0.0102,
+      "confidence": 0.1022,
+      "lift": 1.0144
+    },
+    {
+      "antecedent": "Style_Bohemian",
+      "consequent": "Category_Footwear",
+      "support": 0.0102,
+      "confidence": 0.1011,
+      "lift": 1.0144
+    },
+    {
+      "antecedent": "Style_Vintage",
+      "consequent": "Category_Lingerie",
+      "support": 0.0102,
+      "confidence": 0.1014,
+      "lift": 1.0136
+    },
+    {
+      "antecedent": "Category_Lingerie",
+      "consequent": "Style_Vintage",
+      "support": 0.0102,
+      "confidence": 0.1018,
+      "lift": 1.0136
+    },
+    {
+      "antecedent": "Style_Vintage",
+      "consequent": "Category_Activewear",
+      "support": 0.0101,
+      "confidence": 0.1009,
+      "lift": 1.0118
+    },
+    {
+      "antecedent": "Category_Activewear",
+      "consequent": "Style_Vintage",
+      "support": 0.0101,
+      "confidence": 0.1017,
+      "lift": 1.0118
+    },
+    {
+      "antecedent": "Style_Casual",
+      "consequent": "Category_Outerwear",
+      "support": 0.0101,
+      "confidence": 0.1021,
+      "lift": 1.0118
+    },
+    {
+      "antecedent": "Category_Outerwear",
+      "consequent": "Style_Casual",
+      "support": 0.0101,
+      "confidence": 0.1006,
+      "lift": 1.0118
+    },
+    {
+      "antecedent": "Category_Accessories",
+      "consequent": "Style_Sporty",
+      "support": 0.0102,
+      "confidence": 0.1015,
+      "lift": 1.0116
+    },
+    {
+      "antecedent": "Style_Sporty",
+      "consequent": "Category_Accessories",
+      "support": 0.0102,
+      "confidence": 0.1015,
+      "lift": 1.0116
+    },
+    {
+      "antecedent": "Category_Tops",
+      "consequent": "Style_Minimalist",
+      "support": 0.01,
+      "confidence": 0.0996,
+      "lift": 1.0107
+    },
+    {
+      "antecedent": "Style_Minimalist",
+      "consequent": "Category_Tops",
+      "support": 0.01,
+      "confidence": 0.1018,
+      "lift": 1.0107
+    },
+    {
+      "antecedent": "Style_Formal",
+      "consequent": "Category_Swimwear",
+      "support": 0.0101,
+      "confidence": 0.1016,
+      "lift": 1.0106
+    },
+    {
+      "antecedent": "Category_Swimwear",
+      "consequent": "Style_Formal",
+      "support": 0.0101,
+      "confidence": 0.1008,
+      "lift": 1.0106
+    },
+    {
+      "antecedent": "Style_Bohemian",
+      "consequent": "Category_Bottoms",
+      "support": 0.01,
+      "confidence": 0.0997,
+      "lift": 1.0102
+    },
+    {
+      "antecedent": "Category_Bottoms",
+      "consequent": "Style_Bohemian",
+      "support": 0.01,
+      "confidence": 0.1018,
+      "lift": 1.0102
+    },
+    {
+      "antecedent": "Category_Footwear",
+      "consequent": "Style_Sporty",
+      "support": 0.0101,
+      "confidence": 0.1013,
+      "lift": 1.0099
+    },
+    {
+      "antecedent": "Style_Sporty",
+      "consequent": "Category_Footwear",
+      "support": 0.0101,
+      "confidence": 0.1006,
+      "lift": 1.0099
+    },
+    {
+      "antecedent": "Style_Preppy",
+      "consequent": "Category_Lingerie",
+      "support": 0.01,
+      "confidence": 0.101,
+      "lift": 1.0095
+    },
+    {
+      "antecedent": "Category_Lingerie",
+      "consequent": "Style_Preppy",
+      "support": 0.01,
+      "confidence": 0.1001,
+      "lift": 1.0095
+    }
+  ],
+  "heatmap": {
+    "categories": [
+      "Accessories",
+      "Activewear",
+      "Bottoms",
+      "Dresses",
+      "Footwear",
+      "Jewelry",
+      "Lingerie",
+      "Outerwear",
+      "Swimwear",
+      "Tops"
+    ],
+    "styles": [
+      "Bohemian",
+      "Casual",
+      "Edgy",
+      "Formal",
+      "Glamorous",
+      "Minimalist",
+      "Preppy",
+      "Sporty",
+      "Streetwear",
+      "Vintage"
+    ],
+    "lift": [
+      [
+        null,
+        null,
+        1.0345,
+        1.015,
+        1.0092,
+        null,
+        null,
+        1.0116,
+        null,
+        1.0007
+      ],
+      [
+        1.0288,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.0088,
+        null,
+        1.0118
+      ],
+      [
+        1.0102,
+        1.0205,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.0161,
+        null
+      ],
+      [
+        1.0288,
+        null,
+        null,
+        null,
+        1.0168,
+        null,
+        1.0293,
+        null,
+        null,
+        1.0062
+      ],
+      [
+        1.0144,
+        null,
+        1.0019,
+        null,
+        1.0345,
+        1.0226,
+        null,
+        1.0099,
+        null,
+        null
+      ],
+      [
+        null,
+        1.0078,
+        null,
+        null,
+        null,
+        null,
+        1.0094,
+        null,
+        1.0192,
+        1.0154
+      ],
+      [
+        null,
+        1.0154,
+        1.0315,
+        null,
+        null,
+        null,
+        1.0095,
+        1.0031,
+        1.0327,
+        1.0136
+      ],
+      [
+        null,
+        1.0118,
+        null,
+        1.0192,
+        null,
+        null,
+        1.02,
+        null,
+        null,
+        1.0178
+      ],
+      [
+        null,
+        1.0217,
+        null,
+        1.0106,
+        1.0069,
+        null,
+        1.0048,
+        1.0073,
+        null,
+        null
+      ],
+      [
+        null,
+        1.0069,
+        null,
+        null,
+        1.0393,
+        1.0107,
+        null,
+        1.007,
+        1.0054,
+        null
+      ]
+    ]
+  }
+}
